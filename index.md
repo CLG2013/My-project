@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+##忙看没看是否对每个开放
 
 You can use the [editor on GitHub](https://github.com/CLG2013/My-project/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
