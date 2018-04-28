@@ -1,1 +1,146 @@
+@charset "utf-8";
+*{
+	paddng:0;
+	margin:0
+}
+ul{padding:0;}
+#nav{
+	height: 140px;
+	width:auto;
+	background:#8c97fc;
+	}
+#nav ul{
+	display:table;
+	list-style-type:none;
+	margin:0 auto;
+	}
+#nav li{
+	margin-top:70px;
+	float:left;
+	padding-left:90px;
+	font-size:18px;
+	color:white;
+	}
+#nav .logo{
+	width: 268px;
+	height: 102px;
+	background-image: url(images/icon/xingtong.png);
+	float:left;
+	margin-top:10px;
+	margin-left:30px;
+	padding:0;
+	}
+#nav .time{
+	width: 200px;
+	height: 100px;
+	float:left;
+	margin-top:20px;
+	padding:0;
+	}
+#nav .login{
+	float:left;
+	margin:32px 0 0 90px;
+	width: 175px;
+	height: 71px;
+	}
+#nav .t1,.t2{
+	display:table;
+	color:white;
+	}
+#nav .t1{
+	float:left;
+	}
+#nav .line{
+	width: 1px;	
+	height: 10px;
+	background:white;
+	float:left;
+	margin:5px 5px 0 5px;
+	}
+#nav .qq,.wechart,.weibo{
+	
+	float:left;
+	margin-top:15px;
+	}
+#nav .wechart,.weibo{
+	
+	float:left;
+	margin-left:20px;
+	}
+#nav .qq{
+	width: 31px;
+	height: 34px;
+	background-image:url(images/icon/qq2x.png);
+	}
+#nav .wechart{
+	width: 42px;
+	height: 34px;
+	background-image:url(images/icon/wechart.png);
+	}
+#nav .weibo{
+	width: 42px;
+	height: 35px;
+	background-image:url(images/icon/weibo2x.png);
+	}
+	
+	
+/*...........................................*/
+
+#infor{
+	width: 1920px;
+	height: 797px;
+	background-image:url(images/my-first-web_03.png);
+	}
+#infor .kj{
+	height: 402px;
+	width: 1200px;
+	margin:0px auto;
+	background:blue;
+	}
+#infor video{
+	width: 710px;
+	height: 402px;
+	background:#191919;
+	float:left;
+	}
+#infor ul{
+	display:table;
+	width: 116px;
+	height: 400px;
+	float:left;
+	margin-left:20px;
+	}
+#infor li1,li2,li3,li4{
+	width: 116px;
+	height: 90px;
+	border-radius:2px;
+	background:black;
+	float:left;
+	}
+#infor li2,li3,li4{	margin:14px 0 0 0;}
+#infor .kj-txt{
+	width: 344px;
+	height: 402px;
+	float:left;
+	margin-left:10px;
+	}
+#infor .txt1,.txt{
+	width: 344px;
+	height: 90px;
+	background:#393838;
+	color:white;
+	}
+#infor .txt{
+	float:left;
+	margin-top:14px;
+	}
+#infor h3{
+	float:left;
+	margin-top:5px;
+	}
+#infor p{
+	cleat:both;
+	float:left;
+	margin-top:5px;
+	}
 
