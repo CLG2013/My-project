@@ -7,7 +7,6 @@ ul{padding:0;}
 #nav{
 	width: 1920px;
 	height: 140px;
-	
 	background:#8c97fc;
 	}
 #nav ul{
@@ -88,6 +87,7 @@ ul{padding:0;}
 /*...........................................*/
 
 #infor{
+	float:left;
 	width: 1920px;
 	height: 797px;
 	background-image:url(images/my-first-web_03.png);
@@ -95,13 +95,11 @@ ul{padding:0;}
 #infor .kj{
 	height: 402px;
 	width: 1200px;
-	margin:0px auto;
-	background:blue;
+	margin:250px auto 0 auto;
 	}
 #infor video{
 	width: 710px;
 	height: 402px;
-	background:#191919;
 	float:left;
 	}
 #infor ul{
@@ -111,36 +109,243 @@ ul{padding:0;}
 	float:left;
 	margin-left:20px;
 	}
-#infor li1,li2,li3,li4{
+#infor .pic{
 	width: 116px;
 	height: 90px;
 	border-radius:2px;
 	background:black;
 	float:left;
 	}
-#infor li2,li3,li4{	margin:14px 0 0 0;}
+#infor .pic{	margin:0 0 14px 0;}
 #infor .kj-txt{
 	width: 344px;
 	height: 402px;
 	float:left;
 	margin-left:10px;
 	}
-#infor .txt1,.txt{
+#infor .txt{
 	width: 344px;
 	height: 90px;
-	background:#393838;
 	color:white;
-	}
-#infor .txt{
 	float:left;
-	margin-top:14px;
+	margin-bottom:14px;
 	}
+
 #infor h3{
 	float:left;
 	margin-top:5px;
 	}
 #infor p{
-	cleat:both;
+	clear:both;
 	float:left;
 	margin-top:5px;
 	}
+#infor .botton{
+	width: 298px;
+	height: 45px;
+	border-radius:4px;
+	background:#b1b9fd;
+	margin:30px auto;
+	}
+#infor h4{
+	display:table;
+	line-height:45px;
+	color:white;
+
+	margin:0 auto;
+	}
+	
+/*...............................................*/
+
+#soft{
+	clear:both;
+	float:left;
+	width: 1920px;
+	height: 708px;
+	background-image:url(images/my-first-web_04.png);
+	}
+#soft ul{
+	display:table;
+	margin:300px auto;
+	}
+#soft .ps,.ai,.dw,.pr{
+	width: 190px;
+	height: 190px;
+	float:left;
+	margin-left:100px;
+	}
+#soft .ps{
+	background-image:url(images/icon/ps.png);
+	}
+#soft .ai{
+	background-image:url(images/icon/ai.png);
+	}
+#soft .dw{
+	background-image:url(images/icon/dw.png);
+	}
+#soft .pr{
+	background-image:url(images/icon/pr.png);
+	}
+	
+/*................................................*/
+
+#date{
+	clear:both;
+	float:left;
+	width: 1920px;
+	height: 914px;
+	background-image:url(images/my-first-web_05.png);
+	}
+#date .pic1{
+	display:table;
+	margin:200px auto 0 auto;
+	}
+#date .pic2{
+	display:table;
+	margin:2px auto;
+	}
+#date .pic1 .pic,#date .pic2 .pic{
+	width: 298px;
+	height: 258px;
+/*	background:black;*/
+	float:left;
+	margin-left:2px;
+	}
+#date .pic1 a:nth-child(1) .pic{
+	background-image:url(images/icon/yg.png);
+}
+#date .pic1 a:nth-child(2) .pic{
+	background-image:url(images/icon/yc.png);
+}
+#date .pic1 a:nth-child(3) .pic{
+	background-image:url(images/icon/ir.png);
+}
+#date .pic1 a:nth-child(4) .pic{
+	background-image:url(images/icon/sj.png);
+}
+#date .pic2 a:nth-child(1) .pic{
+	background-image:url(images/icon/sj.png);
+}
+#date .pic2 a:nth-child(2) .pic{
+	background-image:url(images/icon/ai1.png);
+}
+#date .pic2 a:nth-child(3) .pic{
+	background-image:url(images/icon/qs.png);
+}
+#date .pic2 a:nth-child(4) .pic{
+	background-image:url(images/icon/tx.png);
+}
+/*.............................................*/
+
+#prod{
+	clear:both;
+	float:left;
+	width: 1920px;
+	height: 1350px;
+	background-image:url(images/my-first-web_06.png);
+}
+#prod .border{
+	width: 1200px;
+	height: 50px;
+	border:1px solid rgb(33,255,200);
+	border-radius:4px;
+	margin:300px auto;
+}
+#prod ul{
+	list-style-type:none;
+}
+#prod li{
+	float:left;
+	padding:0 50px 0 50px;
+	text-decoration:none;
+	font-size:20px;
+	color:rgb(33,255,200);
+	line-height:50px;
+	font-weight:lighter;
+}
+#me{
+	clear:both;
+	float:left;
+	width: 1920px;
+	height: 2395px;
+	background-image:url(images/my-first-web_07.png);
+}
+#share{
+	clear:both;
+	float:left;
+	width: 1920px;height: 1013px;
+	background-image:url(images/my-first-web_08.png);
+}
+#share .border{
+	display:table;
+	width: 1680px;
+	margin:300px auto;
+}
+#share .pic{
+	width: 480px;
+	height: 132px;
+	float:left;
+	margin:25px 0 25px 240px;
+}
+#share .border a:nth-child(1) .pic{
+	background-image:url(images/icon/w3c.png);
+}
+#share .border a:nth-child(2) .pic{
+	background-image:url(images/icon/github.png);
+}
+#share .border a:nth-child(3) .pic{
+	background-image:url(images/icon/wyykt.png);
+}
+#share .border a:nth-child(4) .pic{
+	background-image:url(images/icon/ljsw.png);
+}
+#share .border a:nth-child(5) .pic{
+	background-image:url(images/icon/kjxq.png);
+}
+#share .border a:nth-child(6) .pic{
+	background-image:url(images/icon/w3c.png);
+}
+#foot{
+	clear:both;
+	float:left;
+	width: 1920px;
+	height: 480px;
+	background-image:url(images/my-first-web_09.png);
+}
+#foot .border{
+	width: 1000px;
+	height: 200px;
+	margin:160px auto 0 auto;
+}
+#foot .base{
+	width: 300px;
+	height: 200px;
+	border:1px solid black;
+	float:left;
+	margin-left:20px;
+	text-align:center;
+	line-height:200px;
+	font-size:30px;
+}
+#foot .code{
+	width: 200px;
+	height: 200px;
+    border:1px solid black;
+    float:left;
+    margin-left:20px;
+    text-align:center;
+	line-height:200px;
+	font-size:30px;
+}
+#foot ul{
+	display:table;
+	list-style-type:none;
+	margin:30px auto;
+}
+#foot li{
+	float:left;
+	padding:0 50px 0 50px;
+	text-decoration:none;
+	color:white;
+	font-size:14px;
+}
