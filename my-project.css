@@ -26,16 +26,18 @@ ul{padding:0;}
 	height: 102px;
 	background-image: url(images/icon/xingtong.png);
 	float:left;
-	margin-top:10px;
-	margin-left:30px;
+	margin:10px 10px 0 10px;
 	padding:0;
 	}
-#nav .time{
-	width: 200px;
-	height: 100px;
+#nav #time{
+	width: 230px;
+	height: 60px;
 	float:left;
-	margin-top:20px;
-	padding:0;
+	margin-top:50px;
+	text-align:center;
+	color:white;
+	font-size:20px;
+	line-height: 30px
 	}
 #nav .login{
 	float:left;
