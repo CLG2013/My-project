@@ -2,7 +2,7 @@
 // JavaScript Document
 window.onload=function(){
 
-	setInterval(fuTime,900);
+	setInterval(fuTime,1000);
 	fuTime();
 
 	function fuTime(){
