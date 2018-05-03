@@ -66,7 +66,7 @@ var oBan=document.getElementById('banner');
 	var oPic=document.getElementById('pic');
 	var num=0;
 
-	var arrUrl=['images/icon/c0.png',
+	var arrUrl=['images/banner/c0.png',
 				'images/banner/c1.jpg',
 				'images/banner/c2.jpg',
 				'images/banner/c3.png',
