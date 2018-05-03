@@ -1,9 +1,10 @@
 @charset "utf-8";
 *{
-	paddng:0;
+	padding:0;
 	margin:0
 }
-ul{padding:0;}
+a,li{text-decoration: none;}
+
 #nav{
 	width: 1920px;
 	height: 140px;
@@ -13,27 +14,29 @@ ul{padding:0;}
 	display:table;
 	list-style-type:none;
 	margin:0 auto;
+/*		background: black;*/
 	}
 #nav li{
-	margin-top:70px;
+	margin-top:65px;
 	float:left;
-	padding-left:90px;
+	padding:5px 45px 5px 45px;
 	font-size:18px;
 	color:white;
+
 	}
 #nav .logo{
 	width: 268px;
 	height: 102px;
 	background-image: url(images/icon/xingtong.png);
 	float:left;
-	margin:10px 10px 0 10px;
+	margin:10px 10px 0 30px;
 	padding:0;
 	}
 #nav #time{
 	width: 230px;
 	height: 60px;
 	float:left;
-	margin-top:50px;
+	margin:50px 60px 0 0;
 	text-align:center;
 	color:white;
 	font-size:20px;
@@ -41,51 +44,61 @@ ul{padding:0;}
 	}
 #nav .login{
 	float:left;
-	margin:32px 0 0 90px;
-	width: 175px;
-	height: 71px;
+	margin:60px 0 0 90px;
+	width: 230px;
+	height: 30px;
+
 	}
-#nav .t1,.t2{
+#nav h3{
 	display:table;
 	color:white;
-	}
-#nav .t1{
 	float:left;
+	font-size:20px;
+	font-weight:lighter;
 	}
-#nav .line{
-	width: 1px;	
+#nav .icon{
+	
+	float:left;
+	margin:0px 0 0 14px;
+	width: 24px;
+	height: 24px;
+/*	background: black;*/
+	}
+
+#nav .login a:nth-child(2) .icon{
+	background-image:url(images/icon/qq.png);
+	background-size: 100% 100%;
+	}
+#nav .login a:nth-child(3) .icon{
+	background-image:url(images/icon/weixin.png);
+	background-size: 100% 100%;
+	}
+#nav .login a:nth-child(4) .icon{
+	background-image:url(images/icon/weibo.png);
+	background-size: 100% 100%;
+	}
+
+#banner{
+	width: 1920px;
+	height: 600px;
+}
+#banner ul{
+	display:table;
+	list-style-type:none;
+	margin:-50px auto 0 auto;
+	position:relative;
+	
+}
+#banner li{
+	width: 10px;
 	height: 10px;
-	background:white;
+	border-radius:50% 50%;
+	background:gray;
 	float:left;
-	margin:5px 5px 0 5px;
-	}
-#nav .qq,.wechart,.weibo{
-	
-	float:left;
-	margin-top:15px;
-	}
-#nav .wechart,.weibo{
-	
-	float:left;
-	margin-left:20px;
-	}
-#nav .qq{
-	width: 31px;
-	height: 34px;
-	background-image:url(images/icon/qq2x.png);
-	}
-#nav .wechart{
-	width: 42px;
-	height: 34px;
-	background-image:url(images/icon/wechart.png);
-	}
-#nav .weibo{
-	width: 42px;
-	height: 35px;
-	background-image:url(images/icon/weibo2x.png);
-	}
-	
-	
+	margin-left:5px;
+
+}
+
 /*...........................................*/
 
 #infor{
@@ -119,7 +132,9 @@ ul{padding:0;}
 	float:left;
 	}
 #infor .pic{	margin:0 0 14px 0;}
+#infor .kj{display:table;}
 #infor .kj-txt{
+/*	display:table;*/
 	width: 344px;
 	height: 402px;
 	float:left;
@@ -131,6 +146,7 @@ ul{padding:0;}
 	color:white;
 	float:left;
 	margin-bottom:14px;
+	padding:0 15px 0 15px;
 	}
 
 #infor h3{
@@ -142,19 +158,13 @@ ul{padding:0;}
 	float:left;
 	margin-top:5px;
 	}
-#infor .botton{
-	width: 298px;
-	height: 45px;
-	border-radius:4px;
-	background:#b1b9fd;
-	margin:30px auto;
-	}
-#infor h4{
+#infor span{
 	display:table;
-	line-height:45px;
 	color:white;
-
-	margin:0 auto;
+	text-align:center;
+	text-decoration:none;
+	float:right;
+	margin-top:60px;
 	}
 	
 /*...............................................*/
@@ -173,6 +183,7 @@ ul{padding:0;}
 #soft .ps,.ai,.dw,.pr{
 	width: 190px;
 	height: 190px;
+	border-radius: 50% 50%;
 	float:left;
 	margin-left:100px;
 	}
@@ -200,7 +211,7 @@ ul{padding:0;}
 	}
 #date .pic1{
 	display:table;
-	margin:200px auto 0 auto;
+	margin:280px auto 0 auto;
 	}
 #date .pic2{
 	display:table;
@@ -239,29 +250,29 @@ ul{padding:0;}
 }
 /*.............................................*/
 
-#prod{
+#products{
 	clear:both;
 	float:left;
 	width: 1920px;
 	height: 1350px;
 	background-image:url(images/my-first-web_06.png);
 }
-#prod .border{
-	width: 1200px;
+#products .border{
+	width: 1204px;
 	height: 50px;
-	border:1px solid rgb(33,255,200);
+	border:1px solid #15d9fa;
 	border-radius:4px;
 	margin:300px auto;
 }
-#prod ul{
+#products ul{
 	list-style-type:none;
 }
-#prod li{
+#products li{
 	float:left;
-	padding:0 50px 0 50px;
+	padding:0 51px 0 51px;
 	text-decoration:none;
 	font-size:20px;
-	color:rgb(33,255,200);
+	color:white;
 	line-height:50px;
 	font-weight:lighter;
 }
@@ -305,7 +316,7 @@ ul{padding:0;}
 	background-image:url(images/icon/kjxq.png);
 }
 #share .border a:nth-child(6) .pic{
-	background-image:url(images/icon/w3c.png);
+	background-image:url(images/icon/mk.png);
 }
 #foot{
 	clear:both;
