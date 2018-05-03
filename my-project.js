@@ -100,7 +100,7 @@ var oBan=document.getElementById('banner');
 	}
 
 				
-				setInterval(fuAto,2000);
+				setInterval(fuAto,1000);
 
 
 		
