@@ -1,0 +1,304 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="player-pro.css" type="text/css">
+<style>
+#menu a:hover{color:#15d9fa;}
+#works a:hover{color:#15d9fa;}
+#float-window .return:hover{cursor:pointer;background:url(images/icon/return2.png);background-size:100% 100%;border-color:#15d9fa;opacity:1;}
+#float-window #music-ico:hover{cursor:pointer;background-image:url(images/icon/mu-ico2.png);background-size:100% 100%;opacity:1;}
+#information ul a:hover{color: #15d9fa}
+#mu-p li:hover{background:rgba(50,50,50,0.6);cursor:pointer;}
+#tool img:hover{transform:scale(1.1);transition:all 0.3s ease-in;border:4px solid #15d9fa;border-radius: 50%}
+#date img:hover{transform:scale(1.1);transition:all 0.3s ease-in;box-shadow:1px 2px 5px #333333;}
+#recommened img:hover{transform:scale(1.1);transition:all 0.3s ease-in;}
+*{padding:0;margin:0;}
+body{font-color:white; font-size:18px;}
+a{text-decoration: none;color:white;display:table;}
+li{list-style:none;}
+ul{display: table;}
+em{font-style:normal;}
+
+.width{width: 1200px;margin:0 auto;}
+
+.head-back{background:#555c9b;height: 120px;min-width:1200px;}
+#menu{overflow:hidden;}
+#menu p{width: 210px;	position:absolute;/*text-align:right;*/font-size:14px;color:white;margin-top:30px;margin:right;margin:35px 0 0 925px;}
+#menu ul a{float:left;margin:75px 0 0 5px;}
+#menu li{padding:0 30px 5px 30px;}
+#menu .logo{float:left;margin:10px 20px 0 10px;width: 228px;}
+#menu ul img{display:table;margin:0px 0 0 2px;}
+#menu ul a:nth-child(7){margin-top:71px;font-size:20px;margin-left:30px;}
+#menu ul a:nth-child(8){margin-top:71px;font-size:20px;margin-left:10px;}
+
+#banner{min-width: 1200px;}
+#banner img{background-size:contain|cover;width:100%;height: auto;}
+#banner ul{margin:-40px auto 30px auto; position:relative;}
+#banner li{width: 10px;height: 10px;border-radius:5px;background:gray;float:left;margin-left: 10px;}
+
+#information{
+	float:left;background-position:center; background-image:url(images/my-first-web_03.png);
+	background-size:contain|cover;width:100%;height:920px;min-width: 1200px;}
+#information .width{display:table; margin-top:336px;}
+#information .width a{float:left;margin:0 5px 13px 5px; width: 466px;}
+#information video{height: 402px;width: 710px;float:left;margin-left:5px;background:black;}
+#information img{float:left;margin-left:5px;margin-right:20px;display:table;}
+
+#information .txt{margin-left:20px;padding:10px 0 8px 0;width:430px;}
+#information h4{width:322px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+#information h4 em{font-size:18px;line-height:35px}/*标题溢出显示省略号*/
+#information p{width:322px;display:-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+			/*内容溢出显示省略号*/
+#information p em{font-size:13px;margin-top: 10px;color:#e1e1e1;}
+#information #time{font-size:12px;font-weight:lighter;line-height:20px;color:#c7c7c7;}
+
+#information .point{width:120px;margin:80px auto;text-align:center;}
+#information .point a{color:#cdcdd0;}
+
+#tool{
+ 	width: 100%;height: 783px; min-width:1200px;float:left;
+	background-image:url(images/my-first-web_04.png); 
+	background-position:center; background-size:contain|cover;
+	}
+#tool .width{margin-top:360px;}
+#tool .width a{float:left;margin-left:75px;}
+
+#date{width: 100%;height: 918px; min-width: 1200px; background-position: center;
+	background-image:url(images/my-first-web_05.png);
+	background-size:contain|cover; float:left;}
+#date .width{display:table; margin-top:290px;}
+#date .kj{float:left;display: table;margin-left:5px;}
+#date a{float:left;}
+#date .point{width:120px;margin:80px auto;text-align:center;}
+#date .point a{color:#cdcdd0;}
+
+#works{width: 100%;height:1469px;min-width: 1200px;background-position:center;
+		background-image:url(images/my-first-web_06.png);float:left;
+		background-size:contain|cover;}
+#works .point{width:120px;margin:1400px auto;text-align:center;}
+#works .point a{color:#cdcdd0;}
+
+#personal-infor{width: 100%;height: 2194px;min-width:1200px;background-position:center;
+			background-image:url(images/my-first-web_07.png);float:left;
+			background-size:contain|cover;}
+
+#recommened{width: 100%;height: 1003px;min-width: 1200px;background-position:center;
+			background-image:url(images/my-first-web_08.png);float:left;
+			background-size:contain|cover;}
+#recommened .width{display:table;margin-top:320px;}
+#recommened .width a{float:left;margin:0 0 60px 80px;}
+#recommened .point{width:120px;margin:50px auto;text-align:center;}
+#recommened .point a{color:#cdcdd0;}
+
+#base{width: 100%;height: 489px;min-width:1200px;background-position:center;
+			background-image:url(images/my-first-web_09.png);float:left;
+			background-size:contain|cover;}
+#base .width{display: table;margin-top:200px;}
+#base .img{width: 120px;height: 120px;float:left;margin:0px 0 0 100px;}
+#base #qq{background:url(images/icon/qq-code.png);background-size:100% 100%;}
+#base #weixin{background:url(images/icon/weixin-code.png);background-size:100% 100%;}
+#base #web{background:url(images/icon/web-code.png);background-size:100% 100%;}
+#base span{display: table;color:white;margin-top:10px;float:left;}
+#base span:nth-child(5){margin-left:123px;}
+#base span:nth-child(6){margin-left:140px;}
+#base span:nth-child(7){margin-left:142px;}
+
+
+#base .txt{float:left;margin-left:34px;}
+#base .txt p{margin-bottom:30px;color: white;}
+#base .link{clear:both;float:left;display:table;margin-top:50px;}
+#base .link a,#base .link p{float:left;color:#cdcdd0;margin-left:48px;}
+
+#float-window{display:table;position:fixed;bottom:30px;right:30px;}
+#float-window .return{width: 60px;height:60px;border-radius:50% 50%;border:4px solid #e6e6e6;background-image:url(images/icon/return.png);background-size:100% 100%;opacity:0.7;margin-top:5px;}
+#float-window #music-ico{width: 68px;height:68px;background-image:url(images/icon/mu-ico1.png);background-size:100% 100%;opacity:0.7;}
+/*..........................................*/
+
+</style>
+</head>
+<body>
+
+<script src="webpro.js" ></script><script src="player-pro.js"></script>
+	<div class="head-back">
+	<div id="menu" class="width">
+		<p id="time">正在加载时间...</p>
+		<img class="logo" src="images/icon/xingtong.png" width="268px" alt="" >
+		<ul>
+			<a href="#"><li>首页</li></a>
+			<a href="#information"><li>动态</li></a>
+			<a href="#tool"><li>软件数据</li></a>
+			<a href="web-pro-works.html" target="blank"><li>作品</li></a>
+			<a href="#recommened"><li>推荐</li></a>
+			<a href="#base"><li>信息</li></a>
+			<a href="#">手机登录</a>
+			<a>|</a>
+			<a href=""><img src="images/icon/qq.png" alt="" ></a>
+			<a href=""><img src="images/icon/weixin.png" alt="" ></a>
+			<a href=""><img src="images/icon/weibo.png" alt="" ></a>
+		</ul>
+	</div>
+	</div>
+<!-- ............................................. -->
+	<div id="banner">
+		<img id="pic" src="" alt="banner">
+		<ul id="ul-li" ></ul>
+	</div>
+<!-- ..................................................... -->
+	<div id="information">
+		<div class="width">
+			<video src="movie/v1.mp4" controls="controls" id="ve-player" ></video>
+		<ul>	
+			<a href="#">
+				<img src="images/icon/test-pic.png" alt="">
+				
+					<h4><em>UI中国与腾讯研究院联合发布《2018设计趋势报告》</em></h4>
+					<p><em>今日，腾讯研究院与设计中国联合发布《2018设计趋势发展报告》。报告全面地对2017设计行业流行设计元素进行</em></p>
+					<h6 id="time">2018-05-26</h6>
+				
+			</a>
+			<a href="#">
+				<img src="images/icon/test-pic.png" alt="">
+				
+					<h4><em>UI中国与腾讯研究院联合发布《2018设计趋势报告》</em></h4>
+					<p><em>今日，腾讯研究院与设计中国联合发布《2018设计趋势发展报告》。报告全面地对2017设计行业流行设计元素进行</em></p>
+					<h6 id="time">2018-05-26</h6>
+				
+			</a>
+			<a href="#">
+				<img src="images/icon/test-pic.png" alt="">
+				
+					<h4><em>UI中国与腾讯研究院联合发布《2018设计趋势报告》</em></h4>
+					<p><em>今日，腾讯研究院与设计中国联合发布《2018设计趋势发展报告》。报告全面地对2017设计行业流行设计元素进行</em></p>
+					<h6 id="time">2018-05-26</h6>
+				
+			</a>
+			<a href="#">
+				<img src="images/icon/test-pic.png" alt="">
+				
+					<h4><em>UI中国与腾讯研究院联合发布《2018设计趋势报告》</em></h4>
+					<p><em>今日，腾讯研究院与设计中国联合发布《2018设计趋势发展报告》。报告全面地对2017设计行业流行设计元素进行</em></p>
+					<h6 id="time">2018-05-26</h6>
+				
+			</a>
+
+			
+		</ul>
+		</div>
+		<div class="point"><a href="">点击查看更多</a></div>	
+	</div>
+<!-- ........................................................ -->
+	<div id="tool">
+		<div class="width">
+			<a href="#"><img src="images/icon/ps.png" alt=""></a>
+			<a href="#"><img src="images/icon/ai.png" alt=""></a>
+			<a href="#"><img src="images/icon/dw.png" alt=""></a>
+			<a href="#"><img src="images/icon/pr.png" alt=""></a>
+		</div>
+	</div>
+<!-- ........................................................... -->
+	<div id="date">
+		<div class="width">
+			<div class="kj">
+			<a href="#"><img src="images/icon/yg.png" alt=""></a>
+			<a href="#"><img src="images/icon/qs.png" alt=""></a>
+			<a href="#"><img src="images/icon/ir.png" alt=""></a>
+			<a href="#"><img src="images/icon/sj.png" alt=""></a>
+			<a href="#"><img src="images/icon/yc.png" alt=""></a>
+			<a href="#"><img src="images/icon/al.png" alt=""></a>
+			<a href="#"><img src="images/icon/fx.png" alt=""></a>
+			<a href="#"><img src="images/icon/tx.png" alt=""></a>
+			</div>
+		</div>
+		<div class="point"><a href="">点击查看更多</a></div>
+	</div>
+<!-- .................................................................. -->
+	<div id="works">
+		<div class="point"><a href="web-pro-works.html" target="blank">点击查看更多</a></div>
+	</div>
+<!-- ........................................................................ -->
+	<div id="personal-infor"></div>
+<!-- ........................................................................ -->
+	<div id="recommened">
+		<div class="width">
+			<a href="https://github.com" target="blank"><img src="images\icon\github.png" alt="github"></a>
+			<a href="#"><img src="images\icon\w3c.png" alt=""></a>
+			<a href="#"><img src="images\icon\mk.png" alt=""></a>
+			<a href="#"><img src="images\icon\kjxq.png" alt=""></a>
+			<a href="#"><img src="images\icon\ljsw.png" alt=""></a>
+			<a href="#"><img src="images\icon\github.png" alt=""></a>
+		</div>
+		<div class="point"><a href="">点击查看更多</a></div>
+	</div>
+<!-- ........................................................................ -->
+	<div id="base">
+		<div class="width">
+			<div class="txt">
+				<p>电话：18408286093</p>
+				<p>邮箱：1558416337@qq.com</p>
+				<p>网站：https://clg2013.github.io/Star-Eye/my-web.html</p>
+			</div>
+			<div class="img" id="qq"></div>
+			<div class="img" id="weixin"></div>
+			<div class="img" id="web"></div>
+			<span>qq二维码</span>
+			<span>微信二维码</span>
+			<span>网站维码</span>
+			<div class="link">
+				<a href="#">设计中国</a><p>|</p>
+				<a href="#">红点设计</a><p>|</p>
+				<a href="#">UI中国</a><p>|</p>
+				<a href="#">爱集网</a><p>|</p>
+				<a href="#">大美工网</a><p>|</p>
+				<a href="#">IMAGES</a><p>|</p>
+				<a href="#">DE-store</a>
+			</div>
+		</div>	
+	</div>
+<!-- .................................................................. -->
+	<div id="float-window">
+		<div id="music-ico" title="点击展开音乐界面"></div>
+		<a href="#"><div class="return" title="返回顶部"></div></a>
+	</div>
+
+<!-- .......................................... -->
+
+
+<div id="music-wraper">
+		<div class="title">星瞳音乐</div>
+		<div id="conte"></div>
+		<div id="music-list">
+		</div>
+		<div class="control">
+			<div id="muic-infor">当前正在播放<br>心愿</div>
+
+			<div class="border1">
+				<div id="before" title="上一首"></div>
+				<div id="play" ></div>
+				<div id="next" title="下一首"></div>
+			</div>
+
+			<div id="alltime">04:25</div>
+
+			<div id="progress2" title="调整播放位置">
+				<div id="progress1" title="调整播放位置"></div>
+			</div>
+
+			<div id="playtime">02:31</div>
+			<div id="volume"></div>
+			
+			<div id="progress4">
+				<div id="progress3" title="调整音量"></div>
+			</div>
+
+		</div>
+		<audio id="player" src=""></audio>
+	</div>
+
+<!-- ................................................................... -->
+
+	<div id="welcome">
+
+	
+	</div>
+</body>
+</html>

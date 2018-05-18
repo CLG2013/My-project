@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>星瞳音乐</title>
+<meta charset="utf-8">
+
+<style>
+*{
+	padding:0;margin:0;
+	text-decoration:none;list-style:none ;
+	font-weight:lighter;
+}
+#music-list li:hover{
+	cursor:pointer;
+	background:rgba(35,35,35,1);
+}
+#before:hover{cursor:pointer;}
+#next:hover{cursor:pointer;}
+#progress2:hover{cursor:pointer;}
+#progress4:hover{cursor:pointer;}
+#play:hover{cursor:pointer;}
+#wraper{
+	width: 360px;
+	height: 600px;
+	background:rgba(40,40,40,1);
+	margin:0 auto;
+}
+
+.title{
+	height: 60px;
+	text-align:center;
+	font-size:30px;
+	color:#15d9fa;
+	line-height:60px;
+	background:rgba(30,30,30,1);
+}
+#conte{
+	height:40px;
+	text-align:center;
+	font-size:16px;
+	color:white;
+	line-height:40px;
+}
+#music-list{
+	height: 306px;
+	overflow:auto;
+}
+#music-list::-webkit-scrollbar{display:none;}
+#music-list li{
+	height: 50px;
+	width: 360px;
+	font-size:20;
+	color:white;
+	line-height:50px;
+	border-top:1px solid rgb(45,45,45);
+}
+.control{
+	background:rgba(30,30,30,1);
+	overflow:hidden;
+	padding-bottom:16px;
+}
+#muic-infor{
+	height: 60px;
+	text-align:center;
+	font-size:16px;
+	color:rgb(200,200,200);
+	line-height:20px;
+	margin-top:10px;
+}
+.border1{
+	display: table;
+	height: 50px;
+	margin:0 auto;
+}
+#before{
+	width: 40px;
+	height: 40px;
+	background-image:url(images/icon/before0.png);
+	background-size:100% 100%;
+	float:left;
+	margin-top:5px;
+}
+#play{
+	width: 50px;
+	height: 50px;
+	background-size:100% 100%;
+	float:left;
+	margin:0 50px 0 50px;
+}
+#next{
+	width: 40px;
+	height: 40px;
+	background-image:url(images/icon/next0.png);
+	background-size:100% 100%;
+	float:left;
+	margin-top:5px;
+}
+
+#progress2{
+	width: 240px;
+	height: 3px;
+	background:rgb(35,35,35);
+	float:left;
+	margin:14px 0 0 10px;
+}
+#progress1{
+	position:absolute;
+	width: 100px;
+	height: 3px;
+	background:#15d9fa;
+
+}
+
+#alltime,#playtime{
+	float:left;
+	margin:5px 0 0 10px;
+	color:gray;
+}
+#volume{
+	width: 26px;
+	height: 26px;
+	background-image:url(images/icon/vioce.png);
+	background-size:100% 100%;
+	margin:32px 0 0 15px;
+}
+#progress4{
+	width: 240px;
+	height: 3px;
+	background:rgb(35,35,35);
+	float:left;
+	margin:-13 0 0 60px;
+}
+#progress3{
+	position:absolute;
+	width: 150px;
+	height: 3px;
+	background:rgb(160,160,160);
+}
+</style>
+<script src="player-pro.js"></script>
+</head>
+<body>
+	<div id="wraper">
+		<div class="title">星瞳音乐</div>
+		<div id="conte"></div>
+		<div id="music-list">
+		</div>
+		<div class="control">
+			<div id="muic-infor">当前正在播放<br>心愿</div>
+
+			<div class="border1">
+				<div id="before"></div>
+				<div id="play"></div>
+				<div id="next"></div>
+			</div>
+
+			<div id="alltime">04:25</div>
+
+			<div id="progress2">
+				<div id="progress1"></div>
+			</div>
+
+			<div id="playtime">02:31</div>
+			<div id="volume"></div>
+			
+			<div id="progress4">
+				<div id="progress3"></div>
+			</div>
+
+		</div>
+		<audio id="player" src=""></audio>
+	</div>
+</body>
+
+</html>

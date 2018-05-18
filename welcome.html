@@ -1,0 +1,64 @@
+<html>
+<meta charset="UTF-8"> 
+<head>
+<style>
+*{padding: 0; margin: 0;text-decoration: none;}
+#bj{width:1920px;height: 1080px;background-image:url(images/welcome.jpg);background-size:100% 100%;margin:0 auto;background-position:center;background-repeat: no-repeat;text-align:center;overflow:hidden;}
+p{color:rgb(240,240,240);transition:0.8s ease-in;width: 180px;height: 36px;margin:0 auto 0 auto;border-radius:4px;line-height:36px;background:#3c8cfa;position:relative;}
+</style>
+</head>
+<body>
+	<a href="web-pro.html"><div id="bj"><p id="text">点击界面进入网页</p></div></a>
+
+
+<script>
+
+window.onload=function (){
+var winWidth = 0;
+var winHeight = 0;
+
+function findDimensions()//函数：获取尺寸
+{
+//获取窗口宽度
+if (window.innerWidth)
+winWidth = window.innerWidth;
+else if ((document.body) && (document.body.clientWidth))
+winWidth = document.body.clientWidth;
+//获取窗口高度
+if (window.innerHeight)
+winHeight = window.innerHeight;
+else if ((document.body) && (document.body.clientHeight))
+winHeight = document.body.clientHeight;
+//通过深入Document内部对body进行检测，获取窗口大小
+if (document.documentElement  && document.documentElement.clientHeight && document.documentElement.clientWidth)
+{
+winHeight = document.documentElement.clientHeight;
+winWidth = document.documentElement.clientWidth;
+}
+//结果输出至两个文本框
+document.getElementById('bj').style.width=winWidth;
+document.getElementById('bj').style.height=winWidth*1080/1920;
+document.getElementById('text').style.marginTop=winWidth*800/1920;
+// document.getElementById('bj').style.transform='scale('+winWidth/1200+')';
+// document.getElementById('bj').style.marginTop=(winWidth/1200-1)*1200/2;
+
+}
+//适配窗口
+setInterval(function(){findDimensions();},500)
+
+//随机变换颜色
+setInterval(function(){
+	
+	var red=parseInt(250*(Math.random()+0.2));
+	var green=parseInt(200*(Math.random()+0.1));
+	var blue=parseInt(230*(Math.random()+0.3));
+	document.getElementById('text').style.background='rgb('+red+','+green+','+blue+')';
+
+},3000)
+
+}
+// window.onresize=findDimensions;
+</script>
+
+</body>
+</html>

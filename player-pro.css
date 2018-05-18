@@ -1,0 +1,145 @@
+*{
+
+	padding:0;margin:0;
+	text-decoration:none;list-style:none ;
+	font-weight:lighter;
+}
+#music-list li:hover{
+	cursor:pointer;
+	background:rgba(35,35,35,0.5);
+}
+#before:hover{cursor:pointer;}
+#next:hover{cursor:pointer;}
+#progress2:hover{cursor:pointer;}
+#progress4:hover{cursor:pointer;}
+#play:hover{cursor:pointer;}
+#music-wraper{
+	position: fixed;
+	width: 360px;
+	height: 600px;
+	background-image:url(images/icon/bj6.jpg);
+	background-size:100% 100%;
+	margin:0 auto;
+	z-index: 99;
+	right:120px;
+	bottom:120px;
+	display:none;
+	opacity:0.9;
+}
+
+#music-wraper .title{
+	height: 60px;
+	text-align:center;
+	font-size:30px;
+	color:#15d9fa;
+	line-height:60px;
+	background:rgba(30,30,30,0.3);
+}
+#conte{
+	height:40px;
+	text-align:center;
+	font-size:16px;
+	color:white;
+	line-height:40px;
+/*	background:rgba(40,40,40,0.4);*/
+}
+#music-list{
+	height: 306px;
+	overflow:auto;
+	
+/*	background:rgba(40,40,40,0.4);*/
+}
+#music-list::-webkit-scrollbar{display:none;}
+#music-list li{
+	height: 50px;
+	width: 360px;
+	font-size:20;
+	font-weight:lighter;
+	color:white;
+	line-height:50px;
+	border-top:1px solid rgb(240,240,240,0.3);
+}
+#music-wraper .control{
+	background:rgba(40,40,40,0.3);
+	overflow:hidden;
+	padding-bottom:16px;
+}
+#muic-infor{
+	height: 60px;
+	text-align:center;
+	font-size:16px;
+	color:rgb(250,250,250);
+	line-height:20px;
+	margin-top:10px;
+}
+#music-wraper .border1{
+	display: table;
+	height: 50px;
+	margin:0 auto;
+}
+#before{
+	width: 40px;
+	height: 40px;
+	background-image:url(images/icon/before0.png);
+	background-size:100% 100%;
+	float:left;
+	margin-top:5px;
+}
+#play{
+	width: 50px;
+	height: 50px;
+	background-size:100% 100%;
+	float:left;
+	margin:0 50px 0 50px;
+}
+#next{
+	width: 40px;
+	height: 40px;
+	background-image:url(images/icon/next0.png);
+	background-size:100% 100%;
+	float:left;
+	margin-top:5px;
+}
+
+#progress2{
+	width: 240px;
+	height: 3px;
+	background:rgba(250,250,250,0.3);
+	float:left;
+	margin:14px 0 0 10px;
+}
+#progress1{
+	position:absolute;
+	width: 100px;
+	height: 3px;
+	background:#15d9fa;
+
+}
+
+#alltime,#playtime{
+	float:left;
+	margin:5px 0 0 10px;
+	color:gray;
+	font-size:14px;
+}
+#volume{
+	width: 26px;
+	height: 26px;
+	background-image:url(images/icon/vioce.png);
+	background-size:100% 100%;
+	margin:32px 0 0 15px;
+}
+#progress4{
+	width: 240px;
+	height: 3px;
+	background:rgba(250,250,250,0.3);
+	float:left;
+	margin:-13 0 0 60px;
+}
+#progress3{
+	position:absolute;
+	width: 150px;
+	height: 3px;
+	background:#15d9fa;
+	opacity:0.6;
+}
