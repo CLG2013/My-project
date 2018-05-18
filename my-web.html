@@ -39,11 +39,19 @@ winHeight = document.documentElement.clientHeight;
 winWidth = document.documentElement.clientWidth;
 }
 //结果输出至两个文本框
-document.getElementById('bj').style.width=winWidth;
-document.getElementById('bj').style.height=winWidth*1080/1920;
-document.getElementById('text').style.marginTop=winWidth*800/1920;
-// document.getElementById('bj').style.transform='scale('+winWidth/1200+')';
-// document.getElementById('bj').style.marginTop=(winWidth/1200-1)*1200/2;
+if(winWidth>winHeight){
+	document.getElementById('bj').style.backgroundImage='url(images/welcome.jpg)';
+	document.getElementById('bj').style.width=winWidth+'px';
+	document.getElementById('bj').style.height=winWidth*1080/1920+'px';
+	document.getElementById('text').style.marginTop=winWidth*800/1920+'px';
+}
+else{
+	document.getElementById('bj').style.backgroundImage='url(images/welcome1.jpg)';
+	document.getElementById('bj').style.width=winWidth+'px';
+	document.getElementById('bj').style.height=winWidth*1920/1080+'px';
+	document.getElementById('text').style.marginTop=winWidth*1400/1080+'px';
+
+}
 
 }
 //适配窗口
