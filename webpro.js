@@ -97,7 +97,7 @@ function webFunc(){
 	}
 
 				
-				setInterval(fuAto,2000);
+				setInterval(fuAto,4000);
 
 
 
