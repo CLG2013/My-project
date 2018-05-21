@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en,zh">
+<meta charset="utf-8">
+<link rel="icon" href="images\icon\favicon.ico">
+
+</script><script src="webpro-works.js" ></script>
+<head>
+<style>
+*{padding:0;margin:0;}
+body{font-color:white; font-size:18px;background-image:url(images/baiyun.png);}
+a{text-decoration: none;color:white;display:table;}
+li{list-style:none;}
+ul{display: table;}
+
+
+.width{width: 1200px;margin:0 auto;}
+
+.head-back{background:#555c9b;height: 120px;min-width:1200px;position:fixed;width:100%;}
+#menu{overflow:hidden;}
+#menu p{width: 210px;	position:absolute;/*text-align:right;*/font-size:14px;color:white;margin-top:30px;margin:right;margin:35px 0 0 925px;}
+#menu ul a{float:left;margin:75px 0 0 5px;}
+#menu li{padding:0 30px 5px 30px;}
+#menu .logo{float:left;margin:10px 20px 0 10px;width: 228px;}
+#menu ul img{display:table;margin:-4px 0 0 2px;}
+#menu ul a:nth-child(7){margin-top:72px;font-size:20px;margin-left:30px;}
+#menu ul a:nth-child(8){margin-top:72px;font-size:20px;margin-left:10px;}
+#float-box h5{width:180px;height: 40px;padding-left:20px; font-size:24px;color:white;font-weight:lighter;line-height:40px;background:#555c9b;}
+#float-box{position:fixed;top:125px; left:110px;width: 200px;height:40px;background:rgba(50,50,50,0.8);transition: 0.3s ease-in;}
+/*.float-box ul{float:left;margin:40px 0 0 0;}*/
+#float-box ul a li{height:40px;width:150px;padding-left:50px; line-height:40px; font-size:18px;border-bottom:1px solid rgba(250,250,250,0.2);z-index: 99;}
+#float-box ul ul{position:absolute;float:left;margin:-41px 0 0 200px;width:150px;line-height:40px; font-size:16px;display:none;}
+#float-box ul ul a{color:white;width: 150px;height: 40px;line-height:40px;background:rgba(50,50,50,0.8);border-bottom:1px solid rgba(250,250,250,0.2);text-align: center;}
+
+#turnicon{width: 26px;height: 26px;background-size:100% 100%;float:right;margin:-32px 10px 0 0;background-image:url(images/icon/down.png);}
+#table{display:none;}
+
+#menu a:hover{color:#15d9fa;}
+#turnicon:hover{cursor:pointer;transform:scale(1.1);}
+#zhutu:hover .dropdown1 {display:table;transition:all 0.5s ease-in}
+#zhuanti:hover .dropdown2 {display:table;}
+#xiangqing:hover .dropdown3 {display:table;}
+#APPjiemian:hover .dropdown4 {display:table;}
+#web:hover .dropdown5 {display:table;}
+#vi:hover .dropdown6{display:table;}
+#poster:hover .dropdown7{display:table;}
+#float-box a:hover{background:rgba(60,60,60,0.8);color:#15d9fa;}
+
+
+.ajustment{height: 120px;width: 100%;}
+#wraper{width: 1200px; margin: 0 auto;}
+#wraper #banner img{width: 1200px;margin-top:5px;}
+#title{width: 716px;height: 130px;background-image:url(images/icon/title.png);background-position:0 -60px;margin:0 auto;}
+
+#title1,#title1-1,#title1-2,#title1-3{width:600px;height: 130px;background-image:url(images/icon/title.png);float:left;background-size:100%;}
+#title1:nth-child(1){background-position:0 -160px;}
+#title1-1:nth-child(2){background-position:0 -284px;}
+#title1-2:nth-child(5){background-position:0 -400px;}
+#title1-3:nth-child(6){background-position:0 -524px;}
+
+#perfume{width: 600px;height:800px;float:left;margin-top:5px;overflow:auto;}
+#tourism{width: 600px;height:800px;float:left;float:left;margin-top:5px;overflow:auto;}
+#mianmo{clear:both;width: 600px;height:800px;float:left;float:left;margin-top:5px;overflow:auto;}
+#APP{width: 600px;height:800px;float:left;float:left;margin-top:5px;overflow:auto;}
+
+#APP-page{width: 1200px;}
+#APP-page img{width: 390px;margin-top:5px;}
+
+#title2,#title3,#title4{width: 716px;height: 130px;background-image:url(images/icon/title.png);margin:0 auto;}
+#title2{background-position:0 -790px;}
+#title3{background-position:0 -944px;}
+#title4{background-position:0 -1096px;}
+#web-page img{width:1200px;}
+#web-page{overflow:auto;height:1200px;min-width: 1200px;margin-top:5px;}
+
+#vi img{width:1200px;height: 5461px;}
+#poster img{width:1200px;margin-top:5px;}
+
+
+/*.......................................................................................*/
+
+#base{margin-top:10px;width: 100%;height: 489px;min-width:1200px;background-position:center;
+			background-image:url(images/my-first-web_09.png);float:left;
+			background-size:contain|cover;}
+#base .width{display: table;margin-top:200px;}
+#base .img{width: 120px;height: 120px;float:left;margin:0px 0 0 100px;}
+#base #qq{background:url(images/icon/qq-code.png);background-size:100% 100%;}
+#base #weixin{background:url(images/icon/weixin-code.png);background-size:100% 100%;}
+#base #web{background:url(images/icon/web-code.png);background-size:100% 100%;}
+#base span{display: table;color:white;margin-top:10px;float:left;}
+#base span:nth-child(5){margin-left:123px;}
+#base span:nth-child(6){margin-left:140px;}
+#base span:nth-child(7){margin-left:142px;}
+
+
+#base .txt{float:left;margin-left:34px;}
+#base .txt p{margin-bottom:30px;color: white;}
+#base .link{clear:both;float:left;display:table;margin-top:50px;}
+#base .link a,#base .link p{float:left;color:#cdcdd0;margin-left:48px;}
+
+</style>
+</head>
+<body>
+
+	<div id="float-box">
+		<h5>我的作品</h5>
+		<div id="turnicon" title="点击展开"></div>
+		<ul id="table">
+			<div id="zhutu">
+			<a  href="#title"><li>banner(主图)</li></a>
+				<ul class="dropdown1" >
+					<a href="#banner">车厘子</a>
+					<a href="#img1">凉茶</a>
+					<a href="#img2">电脑</a>
+					<a href="#img3">耳机1</a>
+					<a href="#img4">耳机2</a>
+					<a href="#img5">耳机3</a>
+					<a href="#img6">蜂蜜</a>
+					<a href="#img7">彩妆</a>
+					<a href="#img8">电脑2</a>
+					<a href="#img9">奶粉</a>
+					<a href="#img10">女衣</a>
+					<a href="#img11">手表</a>
+					<a href="#img12">大衣</a>
+					<a href="#img13">酒</a>
+					<a href="#img14">女鞋</a>
+				</ul>
+			</div>
+
+			<div id="zhuanti">
+			<a href="#title1"><li>商城专题</li></a>
+				<ul class="dropdown2" >
+						<a href="#title1">香水</a>
+						<a href="#title1-1">旅游</a>
+						
+					</ul>
+			</div>
+			<div id="xiangqing">
+			<a href="#title1-2"><li>产品详情</li></a>
+				<ul class="dropdown3" >
+							<a href="#title1-2">面膜</a>
+						</ul>
+			</div>
+			<div id="APPjiemian">
+			<a href="#title1-3"><li>APP界面</li></a>
+				<ul class="dropdown4" >
+						<a href="#title1-3">星瞳APP</a>
+					</ul>
+			</div>
+			<div id="web">
+			<a href="#title2"><li>网站主页</li></a>
+				<ul class="dropdown5" >
+						<a href="#title2">科技</a>
+						<a href="#web-page1">机关站</a>
+		
+					</ul>
+			</div>
+			<div id="vi">
+			<a href="#title3"><li>VI图集</li></a>
+				<ul class="dropdown6" >
+						<a href="#title3">VI图集</a>
+					</ul>
+			</div>
+			<div id="poster">
+			<a href="#title4"><li>海报图集</li></a>
+				<ul class="dropdown7" >
+						<a href="#title4">松鼠的家</a>
+						<a href="#bus">商务海报</a>
+					</ul>
+			</div>
+			
+			<a href="#base"><li>信息窗</li></a>
+			
+			
+		</ul>
+	</div>
+	
+	<div class="head-back">
+	<div id="menu" class="width">
+		<p id="time">正在加载时间...</p>
+		<img class="logo" src="images/icon/xingtong.png" width="268px" alt="" >
+		<ul>
+			<a href="web-pro.html" target="blank"><li>首页</li></a>
+			<a href="#"><li>动态</li></a>
+			<a href="#"><li>软件数据</li></a>
+			<a href="#"><li>作品</li></a>
+			<a href="#"><li>推荐</li></a>
+			<a href="#"><li>信息</li></a>
+			<a href="#">手机登录</a>
+			<a>|</a>
+			<a href=""><img src="images/icon/qq.png" alt="" ></a>
+			<a href=""><img src="images/icon/weixin.png" alt="" ></a>
+			<a href=""><img src="images/icon/weibo.png" alt="" ></a>
+		</ul>
+	</div>
+	</div>
+
+<!-- ........................................ -->
+<div class="ajustment"></div>
+<div id="wraper">
+	<div id="banner">
+		<div id="title"></div>
+		<img id="img1" src="works\banner\c1.jpg" alt="">
+		<img id="img2" src="works\banner\c2.jpg" alt="">
+		<img id="img3" src="works\banner\c3.jpg" alt="">
+		<img id="img4" src="works\banner\c4.jpg" alt="">
+		<img id="img5" src="works\banner\c5.jpg" alt="">
+		<img id="img6" src="works\banner\耳机.jpg" alt="">
+		<img id="img7" src="works\banner\蜂蜜.jpg" alt="">
+		<img id="img8" src="works\banner\精华液.jpg" alt="">
+		<img id="img9" src="works\banner\电脑.png" alt="">
+		<img id="img10" src="works\banner\奶粉.jpg" alt="">
+		<img id="img11" src="works\banner\女衣.jpg" alt="">
+		<img id="img12" src="works\banner\手表.jpg" alt="">
+		<img id="img13" src="works\banner\毛衣.jpg" alt="">
+		<img id="img14" src="works\banner\酒.jpg" alt="">
+		<img id="img15" src="works\banner\鞋.jpg" alt="">
+	</div>
+	<div id="zhuanti">
+	
+		<div id="title1"></div>
+		<div id="title1-1"></div>
+	
+		<div id="perfume">
+			<img src="works\project\perfume.jpg" alt="" width="600">
+		</div>
+		<div id="tourism">
+			<img src="works\project\tourism.jpg" alt="" width="600">
+		</div>
+		
+		<div id="title1-2"></div>
+		<div id="title1-3"></div>
+	
+		<div id="mianmo">
+			<img src="works\project\mianmo.jpg" alt="" width="585">
+		</div>
+		<div id="APP">
+			<img id="display" src="works\APP\DISPLAY.jpg" alt="" width="585">
+		</div>
+	</div>
+
+	<div id="APP-page">
+		<img src="works\APP\star.jpg" alt="">
+		<img src="works\APP\login.jpg" alt="">
+		<img src="works\APP\home.jpg" alt="">
+		<img src="works\APP\design.jpg" alt="">
+		<img src="works\APP\article.jpg" alt="">
+		<img src="works\APP\resource.jpg" alt="">
+	</div>
+	
+		<div id="title2"></div>
+		<div id="web-page">
+			<img src="works\web\Starloop.jpg" alt="">
+		</div>
+		<div id="web-page">
+			<img src="works\web\jiguanzhan.jpg" alt="">
+		</div>
+		<div id="web-page">
+			<img src="works\web\education.jpg" alt="">
+		</div>
+
+	<div id="title3"></div>
+	<div id="vi">
+
+		<img src="works\VI\vi.png" alt="">
+
+	</div>
+	
+	<div id="poster">
+		<div id="title4"></div>
+		<img src="works\posters\haibao.jpg" alt="">
+		<img id="bus" src="works\posters\haibao2.png" alt="">
+	</div>
+</div>
+
+<!-- .......................................................................... -->
+
+<div id="base">
+		<div class="width">
+			<div class="txt">
+				<p>电话：18408286093</p>
+				<p>邮箱：1558416337@qq.com</p>
+				<p>网站：https://clg2013.github.io/Star-Eye/my-web.html</p>
+			</div>
+			<div class="img" id="qq"></div>
+			<div class="img" id="weixin"></div>
+			<div class="img" id="web"></div>
+			<span>qq二维码</span>
+			<span>微信二维码</span>
+			<span>网站维码</span>
+			<div class="link">
+				<a href="#">设计中国</a><p>|</p>
+				<a href="#">红点设计</a><p>|</p>
+				<a href="#">UI中国</a><p>|</p>
+				<a href="#">爱集网</a><p>|</p>
+				<a href="#">大美工网</a><p>|</p>
+				<a href="#">IMAGES</a><p>|</p>
+				<a href="#">DE-store</a>
+			</div>
+		</div>	
+	</div>
+
+</body>
+
+</html>
